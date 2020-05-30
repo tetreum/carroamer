@@ -29,7 +29,7 @@ Check if you can do any of the following tasks:
 
 ## Improve vehicle model
 Current model (Mercedes-Benz) has some problems:
-- It doesn't have trunk: For future missions it would be really usefull to have it.
+- It doesn't have trunk: For future missions it would be really useful to have it.
 - Central mirror is not a single piece/it's material is duplicated: Unifying it would let me fill the area with a full mirror, rather than the actual recantgular.
 - Left mirror material is homehow broken: If you replace it with the one containing the rendererTexture, only a black screen will show up.
 
@@ -40,9 +40,8 @@ And also check the ToDo list.
 
 # Credits
 
-Mercedes-Benz W111 220S model - JohnyTy - https://es.3dexport.com/free-3dmodel-mercedes-benz-w111-220s-290392.htm
-Vehicle physics - MSVehicleSystem(FreeVersion) - https://assetstore.unity.com/packages/tools/physics/ms-vehicle-system-free-version-90214
-Sun Temple scenario - Sandro T - https://assetstore.unity.com/packages/3d/environments/sun-temple-115417
-
-Bullpen3D font - Typodermic Fonts - http://www.typodermicfonts.com
-Alba font - Fontalicious - http://www.fontalicious.com/
+- Mercedes-Benz W111 220S model - JohnyTy - https://es.3dexport.com/free-3dmodel-mercedes-benz-w111-220s-290392.htm
+- Vehicle physics - MSVehicleSystem(FreeVersion) - https://assetstore.unity.com/packages/tools/physics/ms-vehicle-system-free-version-90214
+- Sun Temple scenario - Sandro T - https://assetstore.unity.com/packages/3d/environments/sun-temple-115417
+- Bullpen3D font - Typodermic Fonts - http://www.typodermicfonts.com
+- Alba font - Fontalicious - http://www.fontalicious.com/

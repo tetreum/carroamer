@@ -39,8 +39,9 @@ namespace Peque {
             cam = GetComponentInChildren<Camera>();
         }
 
-		private void Start() {
+		private void OnEnable() {
 			Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
 		}
 
 		private void Update() {

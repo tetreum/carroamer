@@ -33,6 +33,7 @@ namespace Peque
             {
                 case "Main":
                     Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
                     showPanel("MainPanel");
 
                     break;
@@ -41,6 +42,7 @@ namespace Peque
                     showPanel("PlayerPanel");
 
                     Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
                     Cursors.setCursor(Cursors.CType.Normal);
 
                     break;
