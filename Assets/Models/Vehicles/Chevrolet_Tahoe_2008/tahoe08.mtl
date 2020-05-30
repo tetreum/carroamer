@@ -1,0 +1,258 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 06.05.2020 19:52:58
+
+newmtl bodyt
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.6980 0.9255
+	Kd 0.5882 0.6980 0.9255
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\bodyt.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\bodyt.png
+
+newmtl black1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\black.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\black.png
+
+newmtl bodyyy33
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.6824 0.2863 0.0000
+	Kd 0.6824 0.2863 0.0000
+	Ks 0.3150 0.3150 0.3150
+	Ke 0.0000 0.0000 0.0000
+
+newmtl badges
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.1333 0.1333 0.1333
+	Kd 0.1333 0.1333 0.1333
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\badges.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\badges.png
+
+newmtl glass2
+	Ns 10.0000
+	Ni 1.5000
+	d 0.7500
+	Tr 0.2500
+	Tf 0.7500 0.7500 0.7500 
+	illum 2
+	Ka 0.1725 0.1725 0.1725
+	Kd 0.1725 0.1725 0.1725
+	Ks 0.2700 0.2700 0.2700
+	Ke 0.0000 0.0000 0.0000
+
+newmtl light
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\light.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\light.png
+
+newmtl chrome
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8235 0.8235 0.8235
+	Kd 0.8235 0.8235 0.8235
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\chrome.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\chrome.png
+
+newmtl leather2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8353 0.8353 0.8353
+	Kd 0.8353 0.8353 0.8353
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\leather2.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\leather2.png
+
+newmtl leather1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.4196 0.4196 0.4196
+	Kd 0.4196 0.4196 0.4196
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\leather1.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\leather1.png
+
+newmtl inter1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.2000 0.2000 0.2000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\interior.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\interior.png
+
+newmtl glass3
+	Ns 10.0000
+	Ni 1.5000
+	d 0.3500
+	Tr 0.6500
+	Tf 0.3500 0.3500 0.3500 
+	illum 2
+	Ka 0.1725 0.1725 0.1725
+	Kd 0.1725 0.1725 0.1725
+	Ks 0.1800 0.1800 0.1800
+	Ke 0.0000 0.0000 0.0000
+
+newmtl badgest
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5216 0.9882 0.0196
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl wood
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\darkwood.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\darkwood.png
+
+newmtl under
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\und1.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\und1.png
+
+newmtl plastic_inter
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.4196 0.4314 0.4196
+	Kd 0.4196 0.4314 0.4196
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\inter11.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\inter11.png
+
+newmtl glass1
+	Ns 10.0000
+	Ni 1.5000
+	d 0.9500
+	Tr 0.0500
+	Tf 0.9500 0.9500 0.9500 
+	illum 2
+	Ka 0.0706 0.0706 0.0706
+	Kd 0.0706 0.0706 0.0706
+	Ks 0.2700 0.2700 0.2700
+	Ke 0.0000 0.0000 0.0000
+
+newmtl leather3
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\leather3.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\leather3.png
+
+newmtl rims2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\rims1.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\rims1.png
+
+newmtl tire1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka F:\Tahoe\????? ????? (3)\Sale2\tire.png
+	map_Kd F:\Tahoe\????? ????? (3)\Sale2\tire.png
