@@ -26,6 +26,10 @@ public class MainPanel : MonoBehaviour
         SceneManager.LoadScene("Test");
     }
 
+    public void openGithub() {
+        Application.OpenURL("https://github.com/tetreum/carroamer");
+    }
+
     public void exit() {
         Application.Quit();
     }
