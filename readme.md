@@ -16,8 +16,6 @@ You can download the latest compiled binary here: https://github.com/tetreum/car
 - NPCs: Walking, standing, chatting.
 - Dialogs: So NPCs can give you missions, hints or tell you histories.
 - Missions: Deliver packages or passengers from one place to another.
-- Add sound effects to fire ir Sun Temple.
-- Add ambiental sound in Sun Temple.
 - Add fuel system to vehicles.
 - Add turn lights.
 - Merge Sun Temple with Windridge City (https://assetstore.unity.com/packages/3d/environments/roadways/windridge-city-132222)
@@ -47,3 +45,4 @@ And also check the ToDo list.
 - Sun Temple scenario - Sandro T - https://assetstore.unity.com/packages/3d/environments/sun-temple-115417
 - Bullpen3D font - Typodermic Fonts - http://www.typodermicfonts.com
 - Alba font - Fontalicious - http://www.fontalicious.com/
+- Some sound effects like open door - fesliyanstudios - https://www.fesliyanstudios.com/

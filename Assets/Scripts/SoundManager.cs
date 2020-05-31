@@ -5,7 +5,7 @@ using System;
 
 /*
  *
- * SoundManager.Instance.playSound(SoundManager.Effect.ButtonClickOff, this.gameObject);
+ * SoundManager.Instance.playEffect(SoundManager.Effect.ButtonClickOff, this.gameObject);
  * SoundManager.playMusic(SoundManager.Music.Intro, this.gameObject);
  * SoundManager.Instance.playDialog(DialogPanel.Dialogs.NoPower);
 */
@@ -41,6 +41,12 @@ public class SoundManager : MonoBehaviour {
         Eat = 2,
         OpenCarDoor = 3,
         LockCarDoor = 4,
+        OpenDoor1 = 5,
+        OpenDoor2 = 6,
+        OpenDoor3 = 7,
+        CloseDoor1 = 8,
+        CloseDoor2 = 9,
+        CloseDoor3 = 10,
     }
 
     public enum Music

@@ -57,7 +57,7 @@ namespace SunTemple
         {
 			StopAllCoroutines();
 
-			if (DoorClosed)
+            if (DoorClosed)
                 Open();
             else
                 Close();
@@ -84,7 +84,14 @@ namespace SunTemple
 
         void Open()
         {
-			DoorCollider.enabled = false;
+            SoundManager.Effect[] effects = new SoundManager.Effect[] {
+                SoundManager.Effect.OpenDoor1,
+                SoundManager.Effect.OpenDoor2,
+                SoundManager.Effect.OpenDoor3,
+            };
+
+            SoundManager.Instance.playEffect(effects[Random.Range(0, effects.Length)], this.gameObject);
+            DoorCollider.enabled = false;
             DoorClosed = false;
             StartAngle = transform.localEulerAngles.y;
             EndAngle =  StartRotation.y + OpenRotationAmount;
@@ -95,7 +102,14 @@ namespace SunTemple
 
         void Close()
         {
-			DoorCollider.enabled = false;
+            SoundManager.Effect[] effects = new SoundManager.Effect[] {
+                SoundManager.Effect.CloseDoor1,
+                SoundManager.Effect.CloseDoor2,
+                SoundManager.Effect.CloseDoor3,
+            };
+
+            SoundManager.Instance.playEffect(effects[Random.Range(0, effects.Length)], this.gameObject);
+            DoorCollider.enabled = false;
             DoorClosed = true;
             StartAngle = transform.localEulerAngles.y;
             EndAngle = transform.localEulerAngles.y - OpenRotationAmount;
