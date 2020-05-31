@@ -1001,13 +1001,23 @@ public class MSVehicleControllerFree : MonoBehaviour {
 			HingeJoint hinge = hinges[i];
 			JointLimits limits = hinge.limits;
 
-			hinge.useSpring = freeze;
+			hinge.useSpring = true;
 
 			if (freeze) {
-				hingesLimit[i] = limits.max;
-				limits.max = 0f;
+				// right doors use min, while left ones max
+				if (limits.max > 0) {
+					hingesLimit[i] = limits.max;
+					limits.max = 0f;
+				} else {
+					hingesLimit[i] = limits.min;
+					limits.min = 0f;
+				}
 			} else {
-				limits.max = hingesLimit[i];
+				if (hingesLimit[i] > 0) {
+					limits.max = hingesLimit[i];
+				} else {
+					limits.min = hingesLimit[i];
+				}
 			}	
 
 			hinge.limits = limits;

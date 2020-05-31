@@ -40,8 +40,10 @@ And also check the ToDo list.
 
 # Credits
 
-- Mercedes-Benz W111 220S model - JohnyTy - https://es.3dexport.com/free-3dmodel-mercedes-benz-w111-220s-290392.htm
 - Vehicle physics - MSVehicleSystem(FreeVersion) - https://assetstore.unity.com/packages/tools/physics/ms-vehicle-system-free-version-90214
+- Mercedes-Benz W111 220S model - JohnyTy - https://es.3dexport.com/free-3dmodel-mercedes-benz-w111-220s-290392.htm
+- Lada Granta 2018 model - sanskrin - https://es.3dexport.com/free-3dmodel-lada-granta-2018-239975.htm
+- Morgan Aero model - sanskrin - https://es.3dexport.com/free-3dmodel-morgan-aero-supersports-231682.htm
 - Sun Temple scenario - Sandro T - https://assetstore.unity.com/packages/3d/environments/sun-temple-115417
 - Bullpen3D font - Typodermic Fonts - http://www.typodermicfonts.com
 - Alba font - Fontalicious - http://www.fontalicious.com/
