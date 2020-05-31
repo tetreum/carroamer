@@ -751,6 +751,7 @@ public class MSVehicleControllerFree : MonoBehaviour {
 					if (x == nextIndex) {
 						_cameras.cameras[x]._camera.tag = "MainCamera";
 						_cameras.cameras [x]._camera.gameObject.SetActive (true);
+						_cameras.cameras[x]._camera.transform.rotation = Quaternion.identity;
 					} else {
 						_cameras.cameras [x]._camera.gameObject.SetActive (false);
 					}
@@ -1111,7 +1112,7 @@ public class MSVehicleControllerFree : MonoBehaviour {
 		if (enableSkidMarksOnStart) {
 			CheckGroundForSKidMarks ();
 		}
-		if (_cameras.cameras.Length > 0 && Time.timeScale > 0.2f) {
+		if (isInsideTheCar && _cameras.cameras.Length > 0 && Time.timeScale > 0.2f) {
 			CamerasManager ();
 		}
 	}

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Peque;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,9 +18,11 @@ public class MainPanel : MonoBehaviour
     }
 
     public void play() {
+        Menu.Instance.showPanel("LoadingPanel");
         SceneManager.LoadScene("DemoScene");
     }
     public void playTest() {
+        Menu.Instance.showPanel("LoadingPanel");
         SceneManager.LoadScene("Test");
     }
 

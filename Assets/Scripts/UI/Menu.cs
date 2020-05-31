@@ -39,6 +39,7 @@ namespace Peque
                     break;
                 case "Map":
                 case "Test":
+                case "DemoScene":
                     showPanel("PlayerPanel");
 
                     Cursor.lockState = CursorLockMode.Locked;

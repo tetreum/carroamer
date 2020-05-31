@@ -13,7 +13,6 @@ You can download the latest compiled binary here: https://github.com/tetreum/car
 
 # ToDo
 
-- Add a loading screen.
 - NPCs: Walking, standing, chatting.
 - Dialogs: So NPCs can give you missions, hints or tell you histories.
 - Missions: Deliver packages or passengers from one place to another.
@@ -30,6 +29,7 @@ Check if you can do any of the following tasks:
 ## Improve vehicle model
 Current model (Mercedes-Benz) has some problems:
 - It doesn't have trunk: For future missions it would be really useful to have it.
+- Has holes on multiple places, like doors: https://github.com/tetreum/carroamer/blob/master/Screenshots/vehicleHoles.png
 - Central mirror is not a single piece/it's material is duplicated: Unifying it would let me fill the area with a full mirror, rather than the actual recantgular.
 - Left mirror material is homehow broken: If you replace it with the one containing the rendererTexture, only a black screen will show up.
 
