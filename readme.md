@@ -43,6 +43,7 @@ And also check the ToDo list.
 - Lada Granta 2018 model - sanskrin - https://es.3dexport.com/free-3dmodel-lada-granta-2018-239975.htm
 - Morgan Aero model - sanskrin - https://es.3dexport.com/free-3dmodel-morgan-aero-supersports-231682.htm
 - Sun Temple scenario - Sandro T - https://assetstore.unity.com/packages/3d/environments/sun-temple-115417
+- Cardboard Boxes models - PolyWorkshop - https://assetstore.unity.com/packages/3d/props/cardboard-boxes-pack-30695
 - Bullpen3D font - Typodermic Fonts - http://www.typodermicfonts.com
 - Alba font - Fontalicious - http://www.fontalicious.com/
 - Some sound effects like open door - fesliyanstudios - https://www.fesliyanstudios.com/

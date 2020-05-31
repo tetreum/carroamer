@@ -7,14 +7,18 @@ public class ESCPanel : MonoBehaviour {
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        Player.Instance.freeze(Player.FreezeReason.ESCMenu);
+        if (!Player.Instance.isFrozen) {
+            Player.Instance.freeze(Player.FreezeReason.ESCMenu);
+        }
     }
 
     void OnDisable()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        Player.Instance.unFreeze();
+        if (Player.Instance.freezeReason != Player.FreezeReason.Driving) {
+            Player.Instance.unFreeze();
+        }
     }
 
     public void resume() {

@@ -1,6 +1,4 @@
-﻿using Peque.Vehicles;
-using System.Xml.Schema;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 
 namespace Peque { 

@@ -7,6 +7,18 @@ namespace Peque {
         public new Collider collider;
         public Cursors.CType cursorType = Cursors.CType.Handle;
 
+        protected virtual float holdDistance {
+            get { return 3f; }
+        }
+        protected virtual float maxDistanceGrab {
+            get { return 4f; }
+        }
+        /*
+        protected float holdDistance;
+        protected float maxDistanceGrab;
+        */
+        protected bool isHoldingIt;
+
         public bool isNear
         {
             get
@@ -40,6 +52,19 @@ namespace Peque {
         {
             if (!enabled || collider.isTrigger) { return; }
             Cursors.setCursor(Cursors.CType.Normal);
+        }
+
+        protected void holdItem() {
+            Ray playerAim = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+
+            Vector3 nextPos = Camera.main.transform.position + playerAim.direction * holdDistance;
+            Vector3 currPos = transform.position;
+
+            GetComponent<Rigidbody>().velocity = (nextPos - currPos) * 10;
+
+            if (Vector3.Distance(transform.position, Camera.main.transform.position) > maxDistanceGrab) {
+                isHoldingIt = false;
+            }
         }
     }
 
