@@ -41,9 +41,11 @@ namespace SunTemple
 				return;
 			}
 
-			if (IsLocked == false) {
-				Activate();
-			}
+			if (IsLocked) {
+                SoundManager.Instance.playEffect(SoundManager.Effect.LockedDoor, this.gameObject); 
+			} else {
+                Activate();
+            }
 		}
 
 		IEnumerator rotateDoor () {
