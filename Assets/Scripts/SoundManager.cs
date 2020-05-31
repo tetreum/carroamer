@@ -48,6 +48,7 @@ public class SoundManager : MonoBehaviour {
         CloseDoor2 = 9,
         CloseDoor3 = 10,
         LockedDoor = 11,
+        TrailerConnected = 12,
     }
 
     public enum Music
