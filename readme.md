@@ -45,7 +45,15 @@ And also check the ToDo list.
 - Sun Temple scenario - Sandro T - https://assetstore.unity.com/packages/3d/environments/sun-temple-115417
 - Trailer model - ChaserSV40 - https://3dexport.com/free-3dmodel-trailer-189812.htm
 - Cardboard Boxes models - PolyWorkshop - https://assetstore.unity.com/packages/3d/props/cardboard-boxes-pack-30695
+- Yuki model - mohaned500 - https://3dexport.com/free-3dmodel-yuki-girl-251567.htm
+- Sonya model - 3DWomen - https://3dexport.com/free-3dmodel-nude-woman-model-26-225619.htm
+- Casual male model - manoeldarochadeoliveira - https://www.cgtrader.com/free-3d-models/character/man/casual-male-a791f55a-a87b-4c9b-b731-73214ee78336
+- Female model - jeffreyogbonnayaao - https://www.cgtrader.com/free-3d-models/character/other/female-c067989b-3b39-42ec-a3d4-e21fc8035c2e
 - Bullpen3D font - Typodermic Fonts - http://www.typodermicfonts.com
 - Alba font - Fontalicious - http://www.fontalicious.com/
 - Some sound effects like open door - fesliyanstudios - https://www.fesliyanstudios.com/
 - Trailer connected sound effect - TwoLivesLeft - https://freesound.org/people/TwoLivesLeft/sounds/352684/
+
+# Useful pages
+- Free rigged models: https://www.cgtrader.com/free-3d-models/character?rigged=1
+- Free Vehicles with interior: https://es.3dexport.com/free-search/keywords(car%20interior)
