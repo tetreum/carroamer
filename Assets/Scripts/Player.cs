@@ -52,6 +52,17 @@ namespace Peque {
 			if (Input.GetKeyDown(KeyCode.Escape)) {
                 Menu.Instance.showPanel("ESCPanel");
             }
+#if UNITY_EDITOR
+            if (Input.GetKeyDown(KeyCode.Tab)) {
+                if(Cursor.visible) {
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                } else {
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                }
+            }
+#endif
         }
 
         public void enterVehicle (MSVehicleControllerFree vehicle) {

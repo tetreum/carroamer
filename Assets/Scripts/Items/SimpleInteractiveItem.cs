@@ -13,10 +13,7 @@ namespace Peque {
         protected virtual float maxDistanceGrab {
             get { return 4f; }
         }
-        /*
-        protected float holdDistance;
-        protected float maxDistanceGrab;
-        */
+
         protected bool isHoldingIt;
 
         public bool isNear

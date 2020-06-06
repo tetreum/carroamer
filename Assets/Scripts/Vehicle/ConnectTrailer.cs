@@ -1,8 +1,22 @@
 ﻿using Peque;
 using UnityEngine;
 
-public class ConnectTrailer : MonoBehaviour
+public class ConnectTrailer : SimpleInteractiveItem
 {
+    private void OnMouseDown() {
+        if (!isNear) {
+            return;
+        }
+        // its not linked
+        HingeJoint hinge = gameObject.GetComponent<HingeJoint>();
+
+        if (hinge == null) {
+            return;
+        }
+
+        Destroy(hinge);
+        toggleTrigger();
+    }
     private void OnTriggerEnter(Collider other) {
         // its already linked or its an unexpected collision
         if (gameObject.GetComponent<HingeJoint>() != null || Player.Instance.currentVehicle == null) {
@@ -21,10 +35,13 @@ public class ConnectTrailer : MonoBehaviour
         hinge.connectedBody = Player.Instance.currentVehicle.GetComponent<Rigidbody>();
         hinge.useLimits = true;
 
-        // disable connector trigger
+        toggleTrigger();
+    }
+
+    void toggleTrigger () {
         foreach (BoxCollider col in gameObject.GetComponents<BoxCollider>()) {
             if (col.isTrigger) {
-                col.enabled = false;
+                col.enabled = !col.enabled;
                 break;
             }
         }
