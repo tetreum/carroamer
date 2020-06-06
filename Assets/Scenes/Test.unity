@@ -106,21 +106,21 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
+    agentRadius: 0.2
+    agentHeight: 1.9
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.06666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: d9be6a41a9019054698f570e38e6cafd, type: 2}
 --- !u!1 &197299540
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,7 +763,7 @@ PrefabInstance:
     - target: {fileID: 5578685108771978144, guid: 0ebe123e021e7bc42b1984470dd16b59,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5578685108771978144, guid: 0ebe123e021e7bc42b1984470dd16b59,
         type: 3}
@@ -773,7 +773,7 @@ PrefabInstance:
     - target: {fileID: 5578685108771978144, guid: 0ebe123e021e7bc42b1984470dd16b59,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5578685108771978144, guid: 0ebe123e021e7bc42b1984470dd16b59,
         type: 3}
@@ -788,7 +788,7 @@ PrefabInstance:
     - target: {fileID: 5578685108771978144, guid: 0ebe123e021e7bc42b1984470dd16b59,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 5578685108771978144, guid: 0ebe123e021e7bc42b1984470dd16b59,
         type: 3}
@@ -842,16 +842,16 @@ NavMeshAgent:
   m_GameObject: {fileID: 1018212744}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
+  m_Radius: 0.19
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 0.17
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 1.9
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4

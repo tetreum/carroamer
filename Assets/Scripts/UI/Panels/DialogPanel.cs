@@ -57,7 +57,7 @@ public class DialogPanel : MonoBehaviour
         lastReceiver = receiverId;
         Person sender = NPCManager.Instance.getPerson(senderId);
         Person receiver = NPCManager.Instance.getPerson(receiverId);
-        
+
         deletePreviousReplies();
 
         // make characters look each other
@@ -65,7 +65,7 @@ public class DialogPanel : MonoBehaviour
         receiver.talked = sender;
         sender.talked = receiver;
 
-        message.text = dialogs[dialog].text;
+        message.text = replaceVars(dialogs[dialog].text, sender, receiver);
         if (sender.knows(receiver)) {
             personName.text = sender.fullName;
         } else {
@@ -83,7 +83,7 @@ public class DialogPanel : MonoBehaviour
             {
                 GameObject button = (GameObject)Instantiate(replyPrefab, replyContainer);
                 button.name = "TemporalReplyButton";
-                button.GetComponentInChildren<Text>().text = reply.text;
+                button.GetComponentInChildren<Text>().text = replaceVars(reply.text, sender, receiver);
                 button.GetComponent<DialogItem>().id = reply.id;
 
                 AddListener(button.GetComponent<Button>(), reply.id);
@@ -107,6 +107,12 @@ public class DialogPanel : MonoBehaviour
 
         gameObject.SetActive(true);
         firstButton.GetComponent<Button>().Select();
+    }
+
+    private string replaceVars (string text, Person sender, Person receiver) {
+        text = text.Replace("{{senderName}}", sender.name);
+        text = text.Replace("{{receiverName}}", receiver.name);
+        return text;
     }
 
     void AddListener(Button b, string dialogId)
@@ -163,17 +169,17 @@ public class DialogPanel : MonoBehaviour
             close();
             return;
         }
-        /*
-        Person lastSenderPerson = ModManager.getPerson(lastSender);
+        
+        Person lastSenderPerson = NPCManager.Instance.getPerson(lastSender);
         lastSenderPerson.setSpokenDialog(lastReceiver, currentDialog.id, replyId);
 
         if (currentDialog.OnReply == null) {
             close();
             return;
         } else {
-            currentDialog.OnReply(currentDialog, replyId, lastSenderPerson, ModManager.getPerson(lastReceiver));
+            currentDialog.OnReply(currentDialog, replyId, lastSenderPerson, NPCManager.Instance.getPerson(lastReceiver));
         }
-        */
+        
     }
 
     public void close()
@@ -185,10 +191,10 @@ public class DialogPanel : MonoBehaviour
         if (Player.Instance.freezeReason == Player.FreezeReason.Dialog) {
             Player.Instance.unFreeze();
         }
-        /*
-        ModManager.getPerson(lastReceiver).talked = null;
-        ModManager.getPerson(lastSender).talked = null;
-        */
+
+        NPCManager.Instance.getPerson(lastReceiver).talked = null;
+        NPCManager.Instance.getPerson(lastSender).talked = null;
+
         gameObject.SetActive(false);
     }
 }

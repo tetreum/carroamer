@@ -106,7 +106,7 @@ namespace Peque.NPC {
 	    }
 
         private void OnMouseDown() {
-            addTask(new Tasks.Chat(id));
+            addTask(new Tasks.Chat(Player.Instance.id));
         }
 
         public void OnIdle() {
