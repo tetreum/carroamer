@@ -35,6 +35,12 @@ namespace Peque {
             Instance = this;
             firstPersonController = GetComponent<FirstPersonController>();
             cam = GetComponentInChildren<Camera>();
+
+            data = new Person.Data();
+            data.id = 1;
+            data.firstName = "Player";
+            data.health = 100;
+            data.strength = 10;
         }
 
 		private void OnEnable() {

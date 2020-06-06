@@ -24,6 +24,8 @@ namespace Peque
             _instance = this;
             SceneManager.sceneLoaded += OnLevelFinishedLoading;
 
+            getPanel("DialogPanel").GetComponent<DialogPanel>().init();
+
             DontDestroyOnLoad(transform.gameObject);
         }
 

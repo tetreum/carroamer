@@ -11,6 +11,8 @@
 
         public override void start() {
             subTasks.Add(new Subtasks.ShowDialog("WhatDoYouWant", npcId));
+
+            startNextSubTask(null);
         }
     }
 }

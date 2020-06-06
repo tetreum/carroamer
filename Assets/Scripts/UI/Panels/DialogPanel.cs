@@ -25,6 +25,11 @@ public class DialogPanel : MonoBehaviour
     private int lastReceiver;
     private Button firstButton;
 
+    public void init() {
+        Instance = this;
+        logic = new DialogSetup();
+    }
+
     private void OnEnable() {
         StartCoroutine(selectFirstItem());
     }
@@ -38,17 +43,12 @@ public class DialogPanel : MonoBehaviour
         } catch (Exception) { } // maybe the container its empty
     }
 
-    public void init() {
-        Instance = this;
-    }
-
     public void showDialog (string dialog) {
         showDialog(dialog, lastSender, lastReceiver);
     }
 
     public void showDialog (string dialog, int senderId, int receiverId)
     {
-
         if (!dialogs.ContainsKey(dialog)) {
             Debug.LogError("DialogPanel - Missing dialog text for " + dialog);
             return;
@@ -147,16 +147,13 @@ public class DialogPanel : MonoBehaviour
 
     private List<Dialog> getAvailableReplies(string dialog, int senderId, int receiverId)
     {
-        Person sender = null;
-        Person receiver = null;
-        /*
-        Person sender = ModManager.getPerson(senderId);
-        Person receiver = ModManager.getPerson(receiverId);
+        Person sender = NPCManager.Instance.getPerson(senderId);
+        Person receiver = NPCManager.Instance.getPerson(receiverId);
 
         if (!receiver.getData().spokenDialogs.ContainsKey(senderId)) {
             receiver.getData().spokenDialogs.Add(senderId, new DialogData(receiverId, senderId));
         }
-        */
+        
         return logic.getAvailableReplies(dialog, sender, receiver);
     }
 

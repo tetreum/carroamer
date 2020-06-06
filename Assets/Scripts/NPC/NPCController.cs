@@ -22,7 +22,7 @@ namespace Peque.NPC {
 		             | - !HasCouple -> Try to meet someone
     | - else ->
     */
-
+    [RequireComponent(typeof(NavMeshAgent))]
     public class NPCController : Person.Person {
         
         override public int hungry
@@ -57,9 +57,14 @@ namespace Peque.NPC {
         public Task previousTask;
         public Task currentTask;
         
+        [HideInInspector]
         public NavMeshAgent agent;
 
         private bool requestedTasks = false;
+
+        private void Awake() {
+            agent = GetComponent<NavMeshAgent>();
+        }
 
         void Start () {
             // TMP @ToDo refactor/remove this
@@ -71,7 +76,6 @@ namespace Peque.NPC {
             data.firstName = "Martin";
             data.health = 100;
             data.strength = 60;
-            data.houseId = 2;
 
             controller.setData(data);
             NPCManager.Instance.personList.Add(data.id, controller);
@@ -90,7 +94,7 @@ namespace Peque.NPC {
 	    void Update () {
             if (data == null) { return; }
 
-            animator.SetFloat("speed", agent.velocity.magnitude);
+            animator.SetFloat("VelocityZ", agent.velocity.magnitude);
 
 		    if (currentTask != null) {
                 currentTask.OnEachFrame();

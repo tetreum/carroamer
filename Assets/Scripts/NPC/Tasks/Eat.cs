@@ -9,6 +9,10 @@
 
         public override void start ()
         {
+            if (!npc.hasHouse) {
+                startNextSubTask(null);
+                return;
+            }
             ObjectInteractor fridge = npc.house.getItem(House.Item.Fridge);
 
             subTasks.Add(new Subtasks.GoToPosition(fridge.startPosition));
