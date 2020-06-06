@@ -3,7 +3,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 namespace Peque { 
 
-    public class Player : MonoBehaviour
+    public class Player : Person.Person
     {
         public static Player Instance;
         public enum FreezeReason

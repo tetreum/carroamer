@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using Peque;
 using Peque.Person;
 using Peque.UI;
+using Peque.NPC;
 
 public class DialogPanel : MonoBehaviour
 {
@@ -54,10 +55,9 @@ public class DialogPanel : MonoBehaviour
         }
         lastSender = senderId;
         lastReceiver = receiverId;
-        Person sender = null;
-        Person receiver = null;
-        //Person receiver = ModManager.getPerson(receiverId);
-        /*
+        Person sender = NPCManager.Instance.getPerson(senderId);
+        Person receiver = NPCManager.Instance.getPerson(receiverId);
+        
         deletePreviousReplies();
 
         // make characters look each other
@@ -71,7 +71,7 @@ public class DialogPanel : MonoBehaviour
         } else {
             personName.text = "";
         }
-        */
+        
         List<Dialog> replies = getAvailableReplies(dialog, senderId, receiverId);
         
         if (replies.Count == 0) {

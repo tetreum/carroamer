@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Peque.Inventory;
@@ -25,16 +24,20 @@ namespace Peque.UI
             this.index = index;
             this.data = data;
 
-            Player.Instance.StartCoroutine(loadItemImage(data.id, icon));
+            //Player.Instance.StartCoroutine(loadItemImage(data.id, icon));
         }
 
+        /*
         private IEnumerator loadItemImage(string id, RawImage icon) {
+            /*
             var localFile = new WWW("file://" + System.IO.Path.Combine(Application.streamingAssetsPath, "Items/Textures/" + id + ".png"));
 
             yield return localFile;
 
             icon.texture = localFile.texture;
+            
         }
+        */
 
         public void OnSelect(BaseEventData eventData) {
             setSelected();
