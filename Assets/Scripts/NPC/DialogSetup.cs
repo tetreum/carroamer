@@ -21,9 +21,8 @@ namespace Peque.NPC
         private Dictionary<string, Dialog> getDialogs ()
         {
             Dictionary<string, Dialog> dialogs = new Dictionary<string, Dialog>() {
-                {"LetMeIntroduceMyself", new Dialog("Hola, permíteme presentarme.\n Mi nombre es {{receiverName}}")},
-                {"WhatDoYouWant", new Dialog("¿Qué quieres?")},
-                {"OpenDoorUnkownVisitor", new Dialog("¿Qué quieres?", (Dialog currentDialog, string replyId, Person.Person sender, Person.Person receiver) => {
+                {"LetMeIntroduceMyself", new Dialog("Hi, let me introduce myself.\n My name is {{receiverName}}")},
+                {"WhatDoYouWant", new Dialog("¿What do you want?", (Dialog currentDialog, string replyId, Person.Person sender, Person.Person receiver) => {
                     switch (replyId)
                     {
                         case "LetMeIntroduceMyself":
@@ -31,13 +30,21 @@ namespace Peque.NPC
                             break;
                     }
                 })},
-                {"OpenDoorUnexpected", new Dialog("Vaya, no te esperaba")},
-                {"OpenDoorExpected", new Dialog("Ei, pasa, pasa")},
-                {"GotNothingToSay", new Dialog("Dejar de hablar")},
-                {"ItsAPleasure", new Dialog("Un placer conocerte \n Mi nombre es {{senderName}}")},
-                {"SorryIDontKnowYouEnough", new Dialog("Lo siento, no te conozco lo suficiente")},
-                {"HereYouHaveIt", new Dialog("Toma, aquí tienes")},
-                {"GiveMeYourPhone", new Dialog("Me gustaría tener tu número de teléfono", (Dialog currentDialog, string replyId, Person.Person sender, Person.Person receiver) => {
+                {"OpenDoorUnkownVisitor", new Dialog("¿What do you want?", (Dialog currentDialog, string replyId, Person.Person sender, Person.Person receiver) => {
+                    switch (replyId)
+                    {
+                        case "LetMeIntroduceMyself":
+                            DialogPanel.Instance.showDialog("ItsAPleasure");
+                            break;
+                    }
+                })},
+                {"OpenDoorUnexpected", new Dialog("Oh, i didn't expect you")},
+                {"OpenDoorExpected", new Dialog("Hey, come in!")},
+                {"GotNothingToSay", new Dialog("Stop speaking")},
+                {"ItsAPleasure", new Dialog("It's a pleasure \n My name is {{senderName}}")},
+                {"SorryIDontKnowYouEnough", new Dialog("Sorry i don't know much about you yet")},
+                {"HereYouHaveIt", new Dialog("There you have")},
+                {"GiveMeYourPhone", new Dialog("I would like to have your phone number", (Dialog currentDialog, string replyId, Person.Person sender, Person.Person receiver) => {
                     if (sender.getFeelingsFor(receiver).arousal < 40) {
                         DialogPanel.Instance.showDialog("SorryIDontKnowYouEnough");
                     } else {

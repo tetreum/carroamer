@@ -205,8 +205,9 @@ namespace Peque.Person
             if (!data.spokenDialogs.ContainsKey(npcId)) {
                 data.spokenDialogs.Add(npcId, new DialogData(id, npcId));
             }
-
-            data.spokenDialogs[npcId].asked.Add(dialog, reply);
+            if (!data.spokenDialogs[npcId].asked.ContainsKey(dialog)) {
+                data.spokenDialogs[npcId].asked.Add(dialog, reply);
+            }
         }
 
         public void getHit (Weapons.Weapon weapon, Person attacker) {

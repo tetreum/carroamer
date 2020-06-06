@@ -179,7 +179,6 @@ public class DialogPanel : MonoBehaviour
         } else {
             currentDialog.OnReply(currentDialog, replyId, lastSenderPerson, NPCManager.Instance.getPerson(lastReceiver));
         }
-        
     }
 
     public void close()

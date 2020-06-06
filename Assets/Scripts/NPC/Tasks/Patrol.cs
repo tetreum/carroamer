@@ -1,18 +1,22 @@
-﻿namespace Peque.NPC.Tasks
+﻿using UnityEngine;
+
+namespace Peque.NPC.Tasks
 {
     public class Patrol : Task
     {
-        Patrol () {
+        Transform[] waypoints;
+
+        Patrol (Transform[] waypoints) {
             taskName = GetType().Name;
             priority = Task.Priority.Low;
+            this.waypoints = waypoints;
         }
 
         public override void start()
         {
-            
-            //subTasks.Add(grabItem(hambuga));
-            //subTasks.Add(interactWithItem(fryingPan));
-            //subTasks.Add(eat(fryingPan));
+            foreach (Transform point in waypoints) {
+                subTasks.Add(new Subtasks.GoToPosition(point));
+            }
 
             startNextSubTask(null);
         }
