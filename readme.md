@@ -19,6 +19,7 @@ You can download the latest compiled binary here: https://github.com/tetreum/car
 - Add fuel system to vehicles.
 - Add turn lights.
 - Merge Sun Temple with Windridge City (https://assetstore.unity.com/packages/3d/environments/roadways/windridge-city-132222)
+- Implement [RoadArchitect](https://github.com/FritzsHero/RoadArchitect) for roads
 
 # I want to collaborate!
 
